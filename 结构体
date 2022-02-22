@@ -1,0 +1,92 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<string.h>
+
+//结构体
+//定义一个结构体类型，不占空间-图纸
+//struct stu
+//{
+//	//成员变量
+//	char name;
+//	short age;
+//	char num;
+//	char sex;
+//
+//};
+//
+//struct stu2
+//{
+//	char ch[10];
+//	struct stu s1;
+//	
+//};
+//
+//int main()
+//{
+//	//创建结构体变量，占空间-房子
+//	int a = 10;
+//	
+//	struct stu2 s2 = { "hehe",{"lw",2,"hello",'m'}};
+//
+//	printf("%s\n", s2.ch);
+//	printf("%d\n", s2.s1.age);
+
+//typedef struct stu
+//{
+//	char name[20];
+//	short age;
+//	char tele[12];
+//	char sex[5];
+//}Stu;
+//
+//void print1(Stu tem)
+//{
+//	printf("%s\n", tem.name);
+//	printf("%d\n", tem.age);
+//	printf("%s\n", tem.tele);
+//	printf("%s\n", tem.sex);
+//};
+//
+//void print2(Stu* ps)
+//{
+//	printf("%s\n", ps->name);//指针：->
+//	printf("%d\n", ps->age);
+//	printf("%s\n", ps->tele);
+//	printf("%s\n", ps->sex);
+//
+//}
+//
+//int main()
+//{
+//	 Stu s = { "lw",5,"1222222","man" };
+//
+//	 //打印结构体 
+//	print1(s);
+//	print2(&s);//效果更好 所占内存更小，只需要4个字节空间
+//
+//	return 0;
+//}
+
+int add(int x,int y)
+{
+	int z = 0;
+	z = x + y;
+	return z;
+
+
+}
+
+
+//栈区 堆区 静态区
+int main()
+{
+
+	int a = 10;
+	int b = 20;
+	int ret = add(a, b);
+
+	printf("%d\n", ret);
+
+	return 0;
+
+}

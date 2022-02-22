@@ -1,0 +1,4 @@
+﻿  t2.c
+I:\VStudio\VS项目\cstudy\操作符详解\t2.c(87,1): warning C4047: “初始化”:“char”与“char [3]”的间接级别不同
+I:\VStudio\VS项目\cstudy\操作符详解\t2.c(87,1): warning C4047: “初始化”:“char”与“char [9]”的间接级别不同
+  操作符详解.vcxproj -> I:\VStudio\VS项目\cstudy\操作符详解\Debug\操作符详解.exe

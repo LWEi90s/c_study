@@ -1,0 +1,118 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+
+//int main()
+//{
+	////字符指针；
+	//char ch = 'w';
+	//char* pc = &ch;
+	//const char* p2 = "abcdef";//把字符串首地址a的地址交给了p2,常量字符串，不允许修改，前面加const
+	////指针数组：存放指针的数组
+	//int* arr[10];
+	////数组指针：指向数组的指针
+	//int arr2[5];
+	//int(*p3)[5] = &arr2;//p3就是数组指针
+
+
+
+//	//数组参数和指针参数
+//	//1.一维数组传参
+//void test()//()里面可以是：int arr[]    int arr[10]  int *arr  
+//{}
+//void test2()//()里面可以是：int *arr2[]    int *arr2[10]  int * *arr  
+//{}
+//
+//int main()
+//{
+
+//	int arr[10] = { 0 };
+//	int* arr2[10] = { 0 };
+//
+//	test1(arr);
+//	test2(arr2);
+//
+//
+//	return 0;
+//}
+
+//2.二维数组传参
+//void test(int arr[2][3])  //（）里面的参数可以是:int arr[2][3]    int arr[][3]  int(*arr)[3]  只能省略行 不能省略列
+//{
+//	printf("\n");
+//}
+//int main()
+//{
+//	int arr[2][3] = {0};
+//	test(arr);
+//
+//	return 0;
+//
+//}
+
+//例子
+//void print(int* p, int sz)
+//{
+//	for (int i = 0; i < 3; i++)
+//	{
+//		printf("%d\n", *(p + i));
+//	}
+//}
+//int main()
+//{
+//	int arr[3] = { 1,2,3 };
+//	int* p = &arr;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	print(p, sz);
+//
+//
+//
+//	return 0;
+//
+//}
+
+//void test(int ** p)
+//{
+//}
+//int main()
+//{
+//	int* ptr;
+//	int** p = &ptr;
+//	test(&ptr);
+//	test(p);
+//
+//	int* arr[10];
+//	test(arr);//指针数组也可以
+//
+//
+//
+//	return 0;
+//}
+
+
+
+//函数指针 指向函数的指针              &函数名  和  函数名  都是函数的地址
+//int add(int x, int y)
+//{
+//	int z = x + y;
+//	return z;
+//}
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	printf("%d\n",add(a, b));
+//	printf("%p\n", &add);
+//	printf("%p\n", add);
+//
+//	int (*pa)(int, int) = add;//&add 都行
+//	printf("%p\n", *pa);
+//	printf("%d\n", (*pa)(2,3));
+//	printf("%d\n", add(2, 3));
+//
+//
+//
+//	return 0;
+//}
+
+
+//(*(void(*)())0)();     把0强制类型转换成：void(*)()函数指针类型  0就是一个函数的地址 调用0地址处的该函数
